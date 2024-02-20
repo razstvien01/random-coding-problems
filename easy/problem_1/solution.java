@@ -8,10 +8,11 @@ import java.text.*;
  * solution
  */
 public class solution {
+  // ! SOLVE HERE !!!!!!!!!!!!
   private static int sumOfCommonCharacters(String A, String B) {
     int count = 0;
-    for (char c2 : B.toCharArray())
-      if (A.contains("" + c2))
+    for (char c : B.toCharArray())
+      if (A.contains(c + ""))
         ++count;
     return count;
   }
